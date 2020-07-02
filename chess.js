@@ -7,10 +7,7 @@ const button = document.getElementById('button');
 button.addEventListener('click', function () {
   console.log('click firing');
   document.getElementById('scorebar').textContent = Math.random();
-  console.log('working');
-  function testScore() {
-    console.log(score[0].innerText);
-  }
+  console.log('working', scorebar.innerText);
 });
 
 function testScore() {
