@@ -4,7 +4,7 @@
 let score = document.getElementById('scorebar').textContent;
 const button = document.getElementById('button');
 
-const numberMaker = function (max, min) {
+const scoreMaker = function (max, min) {
   return (Math.random() * (max - min) + min).toFixed(2);
 };
 const modifier = function () {
@@ -19,7 +19,7 @@ const modifier = function () {
 button.addEventListener('click', function () {
   console.log('click firing');
   document.getElementById('scorebar').textContent =
-    numberMaker(0, 10) * modifier();
+    scoreMaker(0, 10) * modifier();
   console.log('working', scorebar.innerText);
 });
 
