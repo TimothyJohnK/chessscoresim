@@ -7,13 +7,22 @@ const button = document.getElementById('button');
 const numberMaker = function (max, min) {
   return (Math.random() * (max - min) + min).toFixed(2);
 };
+const modifier = function () {
+  let mod = Math.random() * 10;
+  if (mod % 2 > 1) {
+    return -1;
+  } else {
+    return 1;
+  }
+};
 
 button.addEventListener('click', function () {
   console.log('click firing');
-  document.getElementById('scorebar').textContent = numberMaker(0, 10);
+  document.getElementById('scorebar').textContent =
+    numberMaker(0, 10) * modifier();
   console.log('working', scorebar.innerText);
 });
 
-function testScore() {
-  console.log(score[0].innerText);
-}
+// function testScore() {
+//   console.log(score.textContent);
+// }

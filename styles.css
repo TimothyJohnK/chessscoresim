@@ -15,8 +15,10 @@ body {
   padding: 10px;
   width: 16em;
   text-align: center;
+  box-shadow: 10px 10px 20px rgba(54, 74, 68, 0.4);
+  border-radius: 20px;
+  font-size: 1.2em;
 }
-
 
 button {
   display: block;
@@ -26,8 +28,8 @@ button {
   height: 240px;
   border-radius: 20px;
   border: 0px;
-  box-shadow: 10px 10px 20px rgba(54, 74, 68, .4);
-
+  box-shadow: 10px 10px 20px rgba(54, 74, 68, 0.4);
+  font-size: 30px;
 }
 
 h1 {
