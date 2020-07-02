@@ -1,14 +1,16 @@
 // Chess.com semantics
 // let score = document.getElementsByClassName('evaluation-bar-score');
 
-let score = document.getElementById('scorebar');
+let score = document.getElementById('scorebar').textContent;
 const button = document.getElementById('button');
 
 button.addEventListener('click', function () {
   console.log('click firing');
-  score.value = '';
-  score.appendChild(document.createTextNode(Math.random()));
+  document.getElementById('scorebar').textContent = Math.random();
   console.log('working');
+  function testScore() {
+    console.log(score[0].innerText);
+  }
 });
 
 function testScore() {
