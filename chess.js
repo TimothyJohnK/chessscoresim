@@ -1,3 +1,5 @@
+// https://github.com/ajGingrich/react-pgn-viewer
+
 const score = document.getElementById('scorebar').textContent;
 const button = document.getElementById('button');
 
@@ -7,8 +9,7 @@ const scoreMaker = function () {
   return (score.textContent = truncatedScore);
 };
 
-button.addEventListener('click', function () {
-  console.log('click firing');
-  document.getElementById('scorebar').textContent = scoreMaker();
-  console.log('working', scorebar.innerText);
-});
+button.addEventListener(
+  'click',
+  () => (document.getElementById('scorebar').textContent = scoreMaker())
+);
